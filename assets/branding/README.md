@@ -2,6 +2,8 @@
 
 Created and maintained by Aditya (@cixcex).
 
-- `cinemotion-logo.svg` — primary project mark. Use it for README headers and release packaging.
-- Keep the mark unmodified in official project materials.
-- Do not imply affiliation with Anthropic, Blender, Three.js, or other third parties.
+- `cinemotion-banner.svg` — README/header banner.
+- `cinemotion-mark.svg` — compact mark for avatars, release notes, and social previews.
+- `cinemotion-logo.svg` — horizontal wordmark.
+
+Use the assets unmodified for official project materials. Do not imply affiliation with Anthropic, Blender, Three.js, or other third parties.

@@ -1,0 +1,40 @@
+name: Feature request
+description: Suggest a CINEMOTION capability
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Created and maintained by Aditya (@cixcex).
+        Suggest features that keep the skill Android-first and low-cost by default.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What animation workflow is hard or impossible today?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: What should CINEMOTION do?
+    validations:
+      required: true
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Engine most affected
+      options:
+        - Engine-agnostic
+        - Three.js
+        - Blender
+        - HTML/CSS/JS
+        - SVG/Canvas
+        - AI video generation
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What else did you try?

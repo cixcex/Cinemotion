@@ -109,16 +109,24 @@ def validate_repo(root: Path) -> list[str]:
         "LICENSE",
         "CHANGELOG.md",
         "CONTRIBUTING.md",
+        "CODE_OF_CONDUCT.md",
         "SECURITY.md",
         ".gitignore",
         "docs/INSTALLATION.md",
         "docs/ANDROID-GUIDE.md",
+        "docs/QUICKSTART.md",
         "docs/USAGE.md",
         "docs/ENGINES.md",
         "docs/COST-OPTIMIZATION.md",
         "docs/ARCHITECTURE.md",
         "docs/FAQ.md",
+        "examples/README.md",
         "assets/branding/cinemotion-logo.svg",
+        "assets/branding/cinemotion-banner.svg",
+        "assets/branding/cinemotion-mark.svg",
+        ".github/PULL_REQUEST_TEMPLATE.md",
+        ".github/ISSUE_TEMPLATE/bug_report.yml",
+        ".github/ISSUE_TEMPLATE/feature_request.yml",
     ]
     for rel in required:
         if not (root / rel).exists():
@@ -150,12 +158,40 @@ def validate_repo(root: Path) -> list[str]:
     return errors
 
 
+def validate_secrets(root: Path) -> list[str]:
+    """Scan tracked text files for accidental secrets or leaked task assets."""
+    errors: list[str] = []
+    secret_re = re.compile(
+        r"github_pat_[A-Za-z0-9_]{20,}|gh[pousr]_[A-Za-z0-9]{36,}|"
+        r"sk-ant-[A-Za-z0-9_-]{20,}|AKIA[0-9A-Z]{16}|AIza[0-9A-Za-z_-]{35}|"
+        r"BEGIN [A-Z ]*PRIVATE KEY"
+    )
+    asset_re = re.compile(r"Screenshot_20\d{6}|in\.pinterest\.com|uploads/004" + "eccab")
+    skip_suffixes = {".zip", ".pyc", ".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg"}
+    for path in root.rglob("*"):
+        if not path.is_file() or ".git" in path.parts or "__pycache__" in path.parts:
+            continue
+        if path.suffix.lower() in skip_suffixes:
+            continue
+        try:
+            text = path.read_text(encoding="utf-8")
+        except (UnicodeDecodeError, OSError):
+            continue
+        rel = path.relative_to(root).as_posix()
+        for m in secret_re.finditer(text):
+            errors.append(f"possible secret in {rel}: {m.group(0)[:12]}...")
+        for m in asset_re.finditer(text):
+            errors.append(f"leaked task asset reference in {rel}: {m.group(0)}")
+    return errors
+
+
 def main() -> int:
     root = find_root()
     print(f"Validating CINEMOTION at {root}")
     errors: list[str] = []
     errors.extend(validate_skill(root))
     errors.extend(validate_repo(root))
+    errors.extend(validate_secrets(root))
 
     if errors:
         print("\nFAIL")

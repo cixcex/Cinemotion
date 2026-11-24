@@ -2,12 +2,27 @@
 
 Created and maintained by Aditya (@cixcex).
 
-All notable changes to this project will be documented in this file.
-
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2026-11-26
+## [1.1.0] - 2026-11-25
+
+### Added
+
+- Professional README banner, mark, and logo refresh.
+- Quickstart guide (`docs/QUICKSTART.md`).
+- Contributor Covenant Code of Conduct.
+- GitHub issue templates and pull-request template.
+- Examples index with engine labels.
+- Secret-pattern and screenshot-reference scan in `validate_skill.py`.
+- Additional package verification for governance and branding files.
+
+### Changed
+
+- Bumped skill metadata version to `1.1.0`.
+- Repackaged `cinemotion-claude-skill.zip` and `cinemotion-full-repository.zip`.
+
+## [1.0.0] - 2026-11-25
 
 ### Added
 

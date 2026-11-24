@@ -1,0 +1,54 @@
+name: Bug report
+description: Report a CINEMOTION problem
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Created and maintained by Aditya (@cixcex).
+        Please paste real command output. Do not claim a render or video exists unless it was actually produced.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug and the skill/engine involved.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduce
+      description: Steps and the exact prompt used.
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Skill version
+      description: From SKILL.md metadata.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Claude surface
+      options:
+        - Android
+        - Desktop
+        - Web
+        - Claude Code
+        - API
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / output
+      description: Paste validator or packaging output if relevant.
+      render: shell
