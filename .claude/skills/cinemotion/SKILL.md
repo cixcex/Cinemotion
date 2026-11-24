@@ -4,7 +4,7 @@ description: Create cinematic animations from natural-language requests. Use whe
 license: MIT
 compatibility: Claude Android, Claude Desktop, Claude Web, Claude Code, and Agent Skills-compatible clients; local preview requires a browser or Blender
 metadata:
-  version: 1.1.1
+  version: 1.1.2
   author: Aditya (@cixcex)
   project: CINEMOTION
   repository: https://github.com/cixcex/cinemotion

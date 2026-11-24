@@ -16,9 +16,5 @@ dist/
 *.swp
 .DS_Store
 
-# Generated packages
-releases/*.zip
-!releases/.gitkeep
-
 # OS
 Thumbs.db
