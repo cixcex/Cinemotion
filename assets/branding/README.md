@@ -2,7 +2,7 @@
 
 Created and maintained by Aditya (@cixcex).
 
-- `cinemotion-banner.svg` — README/header banner.
+- `cinemotion-banner.png` — README/header banner supplied by the project maintainer.
 - `cinemotion-mark.svg` — compact mark for avatars, release notes, and social previews.
 - `cinemotion-logo.svg` — horizontal wordmark.
 

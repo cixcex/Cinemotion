@@ -5,6 +5,13 @@ Created and maintained by Aditya (@cixcex).
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] - 2026-11-25
+
+### Changed
+
+- Replaced the generated SVG header banner with the maintainer-supplied PNG banner (`assets/branding/cinemotion-banner.png`).
+- Updated README and packaging checks to reference the PNG banner.
+
 ## [1.1.0] - 2026-11-25
 
 ### Added

@@ -122,7 +122,7 @@ def validate_repo(root: Path) -> list[str]:
         "docs/FAQ.md",
         "examples/README.md",
         "assets/branding/cinemotion-logo.svg",
-        "assets/branding/cinemotion-banner.svg",
+        "assets/branding/cinemotion-banner.png",
         "assets/branding/cinemotion-mark.svg",
         ".github/PULL_REQUEST_TEMPLATE.md",
         ".github/ISSUE_TEMPLATE/bug_report.yml",

@@ -1,6 +1,6 @@
 # CINEMOTION
 
-![CINEMOTION banner](assets/branding/cinemotion-banner.svg)
+![CINEMOTION banner](assets/branding/cinemotion-banner.png)
 
 ![License](https://img.shields.io/badge/license-MIT-22c55e?style=flat-square)
 ![Python](https://img.shields.io/badge/Python-3.11-3776ab?style=flat-square)

@@ -102,7 +102,7 @@ def main() -> int:
         "docs/ANDROID-GUIDE.md",
         "docs/QUICKSTART.md",
         "examples/README.md",
-        "assets/branding/cinemotion-banner.svg",
+        "assets/branding/cinemotion-banner.png",
         "assets/branding/cinemotion-mark.svg",
         ".github/PULL_REQUEST_TEMPLATE.md",
         ".github/ISSUE_TEMPLATE/bug_report.yml",
