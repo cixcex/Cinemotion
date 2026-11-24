@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Node
+node_modules/
+npm-debug.log*
+dist/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Generated packages
+releases/*.zip
+!releases/.gitkeep
+
+# OS
+Thumbs.db
