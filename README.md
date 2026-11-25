@@ -30,7 +30,7 @@ Created and maintained by Aditya (@cixcex).
 
 > Create a 15-second cinematic POV animation of someone waking up in their bedroom, getting out of bed, walking outside, and entering a convenience store at night.
 
-See [docs/QUICKSTART.md](docs/QUICKSTART.md) and [docs/ANDROID-GUIDE.md](docs/ANDROID-GUIDE.md).
+See [docs/QUICKSTART.md](docs/QUICKSTART.md), [docs/ANDROID-GUIDE.md](docs/ANDROID-GUIDE.md), and [docs/PLATFORMS.md](docs/PLATFORMS.md).
 
 ## Efficiency modes
 
@@ -82,12 +82,15 @@ cinemotion/
 
 Each example contains a `scene-plan.md`, a runnable `index.html`, and `main.js`.
 
-## Compatibility
+## Compatibility and usage
 
 - Claude Android (primary target)
 - Claude Desktop / Claude Web
 - Claude Code
+- Claude API / Managed Agents
 - Other clients implementing the open [Agent Skills](https://agentskills.io/) format
+
+Full usage instructions for every surface: [docs/PLATFORMS.md](docs/PLATFORMS.md).
 
 Exact menu labels can vary by client and version. If your Android build does not expose custom skill upload, use desktop/web or Claude Code.
 

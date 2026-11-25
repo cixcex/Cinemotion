@@ -5,6 +5,17 @@ Created and maintained by Aditya (@cixcex).
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-11-25
+
+### Added
+
+- Full cross-platform usage guide (`docs/PLATFORMS.md`) covering Android, desktop/web, Claude Code, API/Managed Agents, and other Agent Skills clients.
+- Cross-links from README, installation guide, and Android guide.
+
+### Changed
+
+- Tracked both release ZIPs in Git so `releases/` is populated on GitHub.
+
 ## [1.1.2] - 2026-11-25
 
 ### Changed

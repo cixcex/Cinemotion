@@ -40,6 +40,10 @@ Then start a Claude Code session and ask for an animation.
 
 For API users, upload the skill ZIP through the Anthropic Skills API as described in the official Skills API documentation. The skill is a normal Agent Skills package; no extra manifest is required.
 
+## Use on every surface
+
+See [PLATFORMS.md](PLATFORMS.md) for Android, desktop/web, Claude Code, API, and other Agent Skills clients.
+
 ## Verify installation
 
 Run the included validator from the full repository:

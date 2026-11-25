@@ -115,6 +115,7 @@ def validate_repo(root: Path) -> list[str]:
         "docs/INSTALLATION.md",
         "docs/ANDROID-GUIDE.md",
         "docs/QUICKSTART.md",
+        "docs/PLATFORMS.md",
         "docs/USAGE.md",
         "docs/ENGINES.md",
         "docs/COST-OPTIMIZATION.md",

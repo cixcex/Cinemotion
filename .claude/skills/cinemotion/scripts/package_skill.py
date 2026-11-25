@@ -101,6 +101,7 @@ def main() -> int:
         ".gitignore",
         "docs/ANDROID-GUIDE.md",
         "docs/QUICKSTART.md",
+        "docs/PLATFORMS.md",
         "examples/README.md",
         "assets/branding/cinemotion-banner.png",
         "assets/branding/cinemotion-mark.svg",

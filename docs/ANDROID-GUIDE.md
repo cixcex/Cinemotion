@@ -24,6 +24,8 @@ If any menu label differs, follow the equivalent option shown by the app. If the
 
 ## Use the skill
 
+For the full cross-surface guide, see [PLATFORMS.md](PLATFORMS.md).
+
 Type a normal request, for example:
 
 > Create a 10-second cinematic POV of walking through a rainy neon street at night.
@@ -63,6 +65,10 @@ Claude Android cannot run Blender, execute arbitrary shell commands, or render v
 | Skill not triggering | Description not matched | Mention “animation,” “POV,” “cinematic scene,” or “3D” |
 | Code not running | Code execution disabled | Enable it in Settings > Capabilities |
 | Upload fails | ZIP too large or name mismatch | Use the official `cinemotion-claude-skill.zip` |
+
+## Also supported
+
+Claude desktop/web, Claude Code, Claude API/Managed Agents, and other Agent Skills clients. See [PLATFORMS.md](PLATFORMS.md) for the complete usage flow.
 
 ## Credits
 
